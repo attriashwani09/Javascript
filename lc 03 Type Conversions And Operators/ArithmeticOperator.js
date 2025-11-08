@@ -10,12 +10,12 @@ console.log(x);
 let a2=20 , b2=30;
 console.log(a2*b2);
 
-// sum++ , sum-- Pre-increment and pre-decrement Operator
+// sum++ , sum-- Post-increment and pre-decrement Operator
 let sum=20;
 let z2=sum++;
 let z3=sum;
 console.log(z2,z3,sum);
 
-// post increment/decrement ++sum, --Sum
+// pre increment/decrement ++sum, --Sum
 let y=++sum
 console.log(y)
