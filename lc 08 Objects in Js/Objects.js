@@ -113,3 +113,26 @@ console.log(abc3);  //  { a: 10, b: 20, c: 30, d: 40 }
 
 const abc4={...abc1,...abc2}
 console.log(abc4);  //  { a: 10, b: 20, c: 30, d: 40 }
+
+
+// 6). Object.freeze() : Prevents any modifications to the object.
+const temp={
+    name:"Arun",
+    age:25
+} 
+
+Object.freeze(temp);
+temp.name="Rajesh"
+console.log(temp);  // { name: 'Arun', age: 25 }  name did'nt change
+
+
+// 6). Object.seal() : Prevents adding or removing properties but allows modification of existing properties
+
+const temp2={
+    name:"Arun",
+    age:25
+}
+Object.seal(temp2);
+delete temp2.age;  // deletion/addition can not be done
+temp2.name="Ronaldo"  // name changes
+console.log(temp2);   // { name: 'Ronaldo', age: 25 }
