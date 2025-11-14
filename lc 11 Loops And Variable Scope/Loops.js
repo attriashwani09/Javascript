@@ -15,4 +15,21 @@ for(let i=0;i<5;i++){
     }
 } 
 
+// 3. While Loop :
+
+let i=1;
+
+while(i<6){
+    console.log("hello");
+    i++;
+} 
+
+
+// 4). do-while :
+let j=1; 
+do{
+    console.log("Bus");
+    j++;
+} 
+while(j<6)
 
