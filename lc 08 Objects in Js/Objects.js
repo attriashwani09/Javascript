@@ -135,4 +135,28 @@ const temp2={
 Object.seal(temp2);
 delete temp2.age;  // deletion/addition can not be done
 temp2.name="Ronaldo"  // name changes
-console.log(temp2);   // { name: 'Ronaldo', age: 25 }
+console.log(temp2);   // { name: 'Ronaldo', age: 25 } 
+
+
+// 7) . Prototyping an object :
+
+const originalObj={
+    name:"Ashwani",
+    age:25,
+    city: "Karnal"
+} 
+
+const objn=Object.create(originalObj);
+objn.Salary=10000;
+objn.Occupation="Engineer";
+
+for( let keys in objn){
+    console.log(keys,objn[keys]);
+} 
+
+// it inherited the properties of originalobj
+// Salary 10000
+// Occupation Engineer
+// name Ashwani
+// age 25
+// city Karnal
