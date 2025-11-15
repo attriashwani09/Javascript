@@ -93,3 +93,33 @@ for(let index of arr2){
 // 15
 // 20 
 
+
+
+// 3) . For each Loop : It takes a callback function as an arguement to do execution.
+
+console.log("For each Loop :")
+const arr4=[10,20,30,40,50];
+
+// arr4.forEach(function(num){
+//     console.log(num);
+// })  
+
+// using arrow function 
+
+// arr4.forEach((num)=> console.log(num)); 
+
+
+ 
+// here we can also give multiple arguements
+// single arguement = number 
+// 2nd arguement = index
+// 3rd arguement = array  
+
+arr4.forEach((num , index,arr)=> {
+    arr4[index]=num*2;
+});  
+
+console.log(arr4);
+
+
+
