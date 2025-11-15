@@ -138,7 +138,7 @@ temp2.name="Ronaldo"  // name changes
 console.log(temp2);   // { name: 'Ronaldo', age: 25 } 
 
 
-// 7) . Prototyping an object :
+// 7) . Prototyping an object : Object.create()
 
 const originalObj={
     name:"Ashwani",
