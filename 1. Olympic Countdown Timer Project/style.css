@@ -7,13 +7,14 @@
 body{
     height: 100vh;
     width: 100vw; 
-    background-color: black;
+    background-color: #0d0d0d;;
     color: white;
+    font-family: Arial, sans-serif;
 }  
 
 #top {
     display: flex;
-    padding: 20px 0px 10px 50px;
+    padding: 20px 50px 10px 50px;
 } 
 
 #Search{ 
@@ -28,13 +29,25 @@ body{
 
 #hid1{
     font-size: 25px;
+    color: #ff5722; 
+    font-weight: bold;
 } 
 #S1{
     width: 300px;  
     height: 20px;
     padding-right: 0px; 
     border-radius: 4px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
 } 
+
+#S2{
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
 
 .mid{
     display: flex; 
@@ -48,7 +61,7 @@ body{
 } 
 
 #m2{
-    font-size: 30px;
+    font-size: 40px;
 } 
 
 .foot{
@@ -64,22 +77,35 @@ body{
 } 
 
 #Days{
-    font-size: 120px;
+    font-size: 150px;
+    font-weight: 900;
+    color: orangered;
+    line-height: 1.1;
 } 
 
 .word1{
     align-self: center; 
-    font-size: 20px;
+    font-size: 24px;
 }  
 
 .FootClass2main{
     display: flex; 
     padding: 20px 0 0 0;
-    gap: 20px;
+    gap: 30px;
+    border-top: 1px solid #333;
+    padding-top: 25px;
 } 
 
+.FootClass2{
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #222;
+    border-radius: 6px;
+
+}
 #Hours , #Minutes , #Seconds{
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 
