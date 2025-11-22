@@ -17,4 +17,4 @@ document.getElementById('Minutes').innerHTML=Minutes;
 document.getElementById('Seconds').innerHTML=Seconds; 
 } 
 
-setInterval(Timer,1000);
+setInterval(Timer,1000); 
