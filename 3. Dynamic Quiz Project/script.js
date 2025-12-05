@@ -106,7 +106,7 @@ const questionBank = [
 
 function RandomQuestion(){
    
-
+    // 1st way : Use Sets ( Not fully Optimized )
     const data=new Set();
 
     while(data.size!=5){
