@@ -107,15 +107,40 @@ const questionBank = [
 function RandomQuestion(){
    
     // 1st way : Use Sets ( Not fully Optimized )
-    const data=new Set();
+    // const data=new Set();
 
-    while(data.size!=5){
-        const index=Math.floor(Math.random()*20);
-        data.add(questionBank[index]);
-    } 
+    // while(data.size!=5){
+    //     const index=Math.floor(Math.random()*20);
+    //     data.add(questionBank[index]);
+    // } 
 
-    // converting the set into array.
-    return [...data];
+    // // converting the set into array.
+    // return [...data]; 
+
+
+    // 2nd way : By randomnly sorting the array. 
+    // questionBank.sort( ()=> Math.random()-0.5);
+    // return questionBank.slice(0,5);
+
+    // 3rd way : fisher algorithm  => gives 0log(n) Tc
+
+
+
+    // 4th way => swaping the cur quest with last of question bank and then decreasing the value
+    const length=questionBank.length;
+    const arr=[];
+
+    for(let i=0;i<5;i++){
+        const index=Math.floor(Math.random()*length);
+        arr.push(questionBank[index]);
+
+        // swapping curr ques with last and decreasing the length value by 1 
+        // by this way the curr ques will move back to last and then length decrease by 1 so it would become inaccesible for loop to return it again. By this way , at every itearction we would surely get a newquestion every time.
+
+        [questionBank[index],questionBank[length-1]]=[questionBank[length-1],questionBank[index]];
+    }
+
+    return arr;
 } 
 
 
