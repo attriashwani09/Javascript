@@ -13,7 +13,7 @@
 // IIFE : it is a function that is called immediately as soon as it is defined.
 
 
-
+// 4). We can also catch the errors in async await . This is shown in Fourth.js file.
 
 // 1) . Example 1 
 function api(){
